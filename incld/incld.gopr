@@ -1,0 +1,10 @@
+var list->[1.0,2.0];
+lis = [3.0] + list;
+function f(,a=0){
+    if a>=0{
+        ret a;
+    }
+    else{
+        ret -a;
+    }
+}

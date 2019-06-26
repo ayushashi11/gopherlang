@@ -1,0 +1,30 @@
+#This is a single Line Comment
+#*
+this is multiline Comment
+*#
+#$$#
+incl incld::incld;
+load builtins;
+var lis is incld::lis;
+for x : (lis>[1,2]?lis:[1,2]) {
+    println x;
+}
+println x;
+var name->(input "Please enter your name: ");
+label printname{
+    println y;
+}
+until name=="end"{
+    print "hello ";
+    if (name=="prabhakar") or (name=="pbk"){
+        y="master";
+    }
+    else{
+        y=name;
+    }
+    goto printname;
+    name=gets "Please enter your name(enter end to stop): ";
+}
+abs = incld::f ;
+println incld::f::(-8);
+println abs::(-786);
