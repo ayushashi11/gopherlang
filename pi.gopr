@@ -1,0 +1,2 @@
+load math;
+println (extcall(-1) math::acos)[0];

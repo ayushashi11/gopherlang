@@ -1,0 +1,12 @@
+type Cnvrtbl{
+    @float value
+}
+impl Cnvrtbl{
+    fn __str(){
+        str{this::value}
+    }
+}
+@type Cnvrtbl crt; #*or @Cnvrtbl crt*#
+print typeof crt;
+crt = Cnvrtbl{9};
+print str{crt};

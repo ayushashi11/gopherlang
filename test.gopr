@@ -1,0 +1,26 @@
+~#
+    "34"
+~
+incl util::err;
+op $+ xfx float,float {
+    if left==0 or right==0{
+        ret err::Err("no zeroes");
+    }
+    err::Ok(left+right-left*right)
+}
+fn div(x,y){
+    x1,y1 = [float{x},float{y}];
+    if y1==0{
+        ret err::Err("y cant be 0");
+    }
+    ret err::Ok(x1/y1);
+}
+n1, n2=[input "Enter n1:", input "Enter n2:"];
+(div(n1,n2))::unpack() -> result, _; #* or result, _ = (div(n1,n2))::unpack(); *#
+if _!=""{
+    print _;
+    exit -1;
+}
+println result;
+res,_=(2 $+ 0)::unpack();
+println `res` + _;

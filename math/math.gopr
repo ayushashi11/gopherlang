@@ -1,0 +1,7 @@
+load math;
+fn sin(x){
+    ret (extcall(x) math::sin)[0];
+}
+fn cos(x){
+    ret (extcall(x) math::cos)[0];
+}

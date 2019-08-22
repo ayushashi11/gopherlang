@@ -44,12 +44,12 @@ class GopherListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GopherParser#var.
-    def enterVar(self, ctx:GopherParser.VarContext):
+    # Enter a parse tree produced by GopherParser#exit.
+    def enterExit(self, ctx:GopherParser.ExitContext):
         pass
 
-    # Exit a parse tree produced by GopherParser#var.
-    def exitVar(self, ctx:GopherParser.VarContext):
+    # Exit a parse tree produced by GopherParser#exit.
+    def exitExit(self, ctx:GopherParser.ExitContext):
         pass
 
 
@@ -59,6 +59,105 @@ class GopherListener(ParseTreeListener):
 
     # Exit a parse tree produced by GopherParser#preproc.
     def exitPreproc(self, ctx:GopherParser.PreprocContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#valdVar.
+    def enterValdVar(self, ctx:GopherParser.ValdVarContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#valdVar.
+    def exitValdVar(self, ctx:GopherParser.ValdVarContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#novalVar.
+    def enterNovalVar(self, ctx:GopherParser.NovalVarContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#novalVar.
+    def exitNovalVar(self, ctx:GopherParser.NovalVarContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#novalClass.
+    def enterNovalClass(self, ctx:GopherParser.NovalClassContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#novalClass.
+    def exitNovalClass(self, ctx:GopherParser.NovalClassContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#multivar.
+    def enterMultivar(self, ctx:GopherParser.MultivarContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#multivar.
+    def exitMultivar(self, ctx:GopherParser.MultivarContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#powAssgn.
+    def enterPowAssgn(self, ctx:GopherParser.PowAssgnContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#powAssgn.
+    def exitPowAssgn(self, ctx:GopherParser.PowAssgnContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#multAssgn.
+    def enterMultAssgn(self, ctx:GopherParser.MultAssgnContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#multAssgn.
+    def exitMultAssgn(self, ctx:GopherParser.MultAssgnContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#addAssgn.
+    def enterAddAssgn(self, ctx:GopherParser.AddAssgnContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#addAssgn.
+    def exitAddAssgn(self, ctx:GopherParser.AddAssgnContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#appendAssgn.
+    def enterAppendAssgn(self, ctx:GopherParser.AppendAssgnContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#appendAssgn.
+    def exitAppendAssgn(self, ctx:GopherParser.AppendAssgnContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#popandAssgn.
+    def enterPopandAssgn(self, ctx:GopherParser.PopandAssgnContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#popandAssgn.
+    def exitPopandAssgn(self, ctx:GopherParser.PopandAssgnContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#indexAssgn.
+    def enterIndexAssgn(self, ctx:GopherParser.IndexAssgnContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#indexAssgn.
+    def exitIndexAssgn(self, ctx:GopherParser.IndexAssgnContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#decl.
+    def enterDecl(self, ctx:GopherParser.DeclContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#decl.
+    def exitDecl(self, ctx:GopherParser.DeclContext):
         pass
 
 
@@ -80,6 +179,15 @@ class GopherListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GopherParser#fileouts.
+    def enterFileouts(self, ctx:GopherParser.FileoutsContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#fileouts.
+    def exitFileouts(self, ctx:GopherParser.FileoutsContext):
+        pass
+
+
     # Enter a parse tree produced by GopherParser#label_def.
     def enterLabel_def(self, ctx:GopherParser.Label_defContext):
         pass
@@ -98,12 +206,75 @@ class GopherListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GopherParser#class_stmt.
+    def enterClass_stmt(self, ctx:GopherParser.Class_stmtContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#class_stmt.
+    def exitClass_stmt(self, ctx:GopherParser.Class_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#impl_stmt.
+    def enterImpl_stmt(self, ctx:GopherParser.Impl_stmtContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#impl_stmt.
+    def exitImpl_stmt(self, ctx:GopherParser.Impl_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#class_inst.
+    def enterClass_inst(self, ctx:GopherParser.Class_instContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#class_inst.
+    def exitClass_inst(self, ctx:GopherParser.Class_instContext):
+        pass
+
+
     # Enter a parse tree produced by GopherParser#def_func_stmt.
     def enterDef_func_stmt(self, ctx:GopherParser.Def_func_stmtContext):
         pass
 
     # Exit a parse tree produced by GopherParser#def_func_stmt.
     def exitDef_func_stmt(self, ctx:GopherParser.Def_func_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#def_func_expr.
+    def enterDef_func_expr(self, ctx:GopherParser.Def_func_exprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#def_func_expr.
+    def exitDef_func_expr(self, ctx:GopherParser.Def_func_exprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#type_name.
+    def enterType_name(self, ctx:GopherParser.Type_nameContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#type_name.
+    def exitType_name(self, ctx:GopherParser.Type_nameContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#bin_op_def_stmt.
+    def enterBin_op_def_stmt(self, ctx:GopherParser.Bin_op_def_stmtContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#bin_op_def_stmt.
+    def exitBin_op_def_stmt(self, ctx:GopherParser.Bin_op_def_stmtContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#prfix_op_def_stmt.
+    def enterPrfix_op_def_stmt(self, ctx:GopherParser.Prfix_op_def_stmtContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#prfix_op_def_stmt.
+    def exitPrfix_op_def_stmt(self, ctx:GopherParser.Prfix_op_def_stmtContext):
         pass
 
 
@@ -134,6 +305,15 @@ class GopherListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GopherParser#exprID.
+    def enterExprID(self, ctx:GopherParser.ExprIDContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#exprID.
+    def exitExprID(self, ctx:GopherParser.ExprIDContext):
+        pass
+
+
     # Enter a parse tree produced by GopherParser#parExpr.
     def enterParExpr(self, ctx:GopherParser.ParExprContext):
         pass
@@ -149,6 +329,15 @@ class GopherListener(ParseTreeListener):
 
     # Exit a parse tree produced by GopherParser#numberAtom.
     def exitNumberAtom(self, ctx:GopherParser.NumberAtomContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#expnumberAtom.
+    def enterExpnumberAtom(self, ctx:GopherParser.ExpnumberAtomContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#expnumberAtom.
+    def exitExpnumberAtom(self, ctx:GopherParser.ExpnumberAtomContext):
         pass
 
 
@@ -188,6 +377,15 @@ class GopherListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GopherParser#listspaceAtom.
+    def enterListspaceAtom(self, ctx:GopherParser.ListspaceAtomContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#listspaceAtom.
+    def exitListspaceAtom(self, ctx:GopherParser.ListspaceAtomContext):
+        pass
+
+
     # Enter a parse tree produced by GopherParser#nullAtom.
     def enterNullAtom(self, ctx:GopherParser.NullAtomContext):
         pass
@@ -197,12 +395,147 @@ class GopherListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GopherParser#typeOfExpr.
+    def enterTypeOfExpr(self, ctx:GopherParser.TypeOfExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#typeOfExpr.
+    def exitTypeOfExpr(self, ctx:GopherParser.TypeOfExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#lenExpr.
+    def enterLenExpr(self, ctx:GopherParser.LenExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#lenExpr.
+    def exitLenExpr(self, ctx:GopherParser.LenExprContext):
+        pass
+
+
     # Enter a parse tree produced by GopherParser#id_callExpr.
     def enterId_callExpr(self, ctx:GopherParser.Id_callExprContext):
         pass
 
     # Exit a parse tree produced by GopherParser#id_callExpr.
     def exitId_callExpr(self, ctx:GopherParser.Id_callExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#class_instExpr.
+    def enterClass_instExpr(self, ctx:GopherParser.Class_instExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#class_instExpr.
+    def exitClass_instExpr(self, ctx:GopherParser.Class_instExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#prefixOpExpr.
+    def enterPrefixOpExpr(self, ctx:GopherParser.PrefixOpExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#prefixOpExpr.
+    def exitPrefixOpExpr(self, ctx:GopherParser.PrefixOpExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#binOpExpr.
+    def enterBinOpExpr(self, ctx:GopherParser.BinOpExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#binOpExpr.
+    def exitBinOpExpr(self, ctx:GopherParser.BinOpExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#typeCastExpr.
+    def enterTypeCastExpr(self, ctx:GopherParser.TypeCastExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#typeCastExpr.
+    def exitTypeCastExpr(self, ctx:GopherParser.TypeCastExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#xorExpr.
+    def enterXorExpr(self, ctx:GopherParser.XorExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#xorExpr.
+    def exitXorExpr(self, ctx:GopherParser.XorExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#listSliceExpr.
+    def enterListSliceExpr(self, ctx:GopherParser.ListSliceExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#listSliceExpr.
+    def exitListSliceExpr(self, ctx:GopherParser.ListSliceExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#switchExpr.
+    def enterSwitchExpr(self, ctx:GopherParser.SwitchExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#switchExpr.
+    def exitSwitchExpr(self, ctx:GopherParser.SwitchExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#def_funcExpr.
+    def enterDef_funcExpr(self, ctx:GopherParser.Def_funcExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#def_funcExpr.
+    def exitDef_funcExpr(self, ctx:GopherParser.Def_funcExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#valueExpr.
+    def enterValueExpr(self, ctx:GopherParser.ValueExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#valueExpr.
+    def exitValueExpr(self, ctx:GopherParser.ValueExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#unotExpr.
+    def enterUnotExpr(self, ctx:GopherParser.UnotExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#unotExpr.
+    def exitUnotExpr(self, ctx:GopherParser.UnotExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#listIndexExpr.
+    def enterListIndexExpr(self, ctx:GopherParser.ListIndexExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#listIndexExpr.
+    def exitListIndexExpr(self, ctx:GopherParser.ListIndexExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#relatExpr.
+    def enterRelatExpr(self, ctx:GopherParser.RelatExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#relatExpr.
+    def exitRelatExpr(self, ctx:GopherParser.RelatExprContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#appendExpr.
+    def enterAppendExpr(self, ctx:GopherParser.AppendExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#appendExpr.
+    def exitAppendExpr(self, ctx:GopherParser.AppendExprContext):
         pass
 
 
@@ -233,6 +566,15 @@ class GopherListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GopherParser#containsExpr.
+    def enterContainsExpr(self, ctx:GopherParser.ContainsExprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#containsExpr.
+    def exitContainsExpr(self, ctx:GopherParser.ContainsExprContext):
+        pass
+
+
     # Enter a parse tree produced by GopherParser#multExpr.
     def enterMultExpr(self, ctx:GopherParser.MultExprContext):
         pass
@@ -260,15 +602,6 @@ class GopherListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GopherParser#valueExpr.
-    def enterValueExpr(self, ctx:GopherParser.ValueExprContext):
-        pass
-
-    # Exit a parse tree produced by GopherParser#valueExpr.
-    def exitValueExpr(self, ctx:GopherParser.ValueExprContext):
-        pass
-
-
     # Enter a parse tree produced by GopherParser#ext_callExpr.
     def enterExt_callExpr(self, ctx:GopherParser.Ext_callExprContext):
         pass
@@ -287,21 +620,12 @@ class GopherListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GopherParser#unotExpr.
-    def enterUnotExpr(self, ctx:GopherParser.UnotExprContext):
+    # Enter a parse tree produced by GopherParser#strcnvrtExpr.
+    def enterStrcnvrtExpr(self, ctx:GopherParser.StrcnvrtExprContext):
         pass
 
-    # Exit a parse tree produced by GopherParser#unotExpr.
-    def exitUnotExpr(self, ctx:GopherParser.UnotExprContext):
-        pass
-
-
-    # Enter a parse tree produced by GopherParser#relatExpr.
-    def enterRelatExpr(self, ctx:GopherParser.RelatExprContext):
-        pass
-
-    # Exit a parse tree produced by GopherParser#relatExpr.
-    def exitRelatExpr(self, ctx:GopherParser.RelatExprContext):
+    # Exit a parse tree produced by GopherParser#strcnvrtExpr.
+    def exitStrcnvrtExpr(self, ctx:GopherParser.StrcnvrtExprContext):
         pass
 
 
@@ -323,6 +647,15 @@ class GopherListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GopherParser#len_expr.
+    def enterLen_expr(self, ctx:GopherParser.Len_exprContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#len_expr.
+    def exitLen_expr(self, ctx:GopherParser.Len_exprContext):
+        pass
+
+
     # Enter a parse tree produced by GopherParser#incl_stmt.
     def enterIncl_stmt(self, ctx:GopherParser.Incl_stmtContext):
         pass
@@ -341,12 +674,30 @@ class GopherListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GopherParser#for_stmt.
-    def enterFor_stmt(self, ctx:GopherParser.For_stmtContext):
+    # Enter a parse tree produced by GopherParser#singlFor.
+    def enterSinglFor(self, ctx:GopherParser.SinglForContext):
         pass
 
-    # Exit a parse tree produced by GopherParser#for_stmt.
-    def exitFor_stmt(self, ctx:GopherParser.For_stmtContext):
+    # Exit a parse tree produced by GopherParser#singlFor.
+    def exitSinglFor(self, ctx:GopherParser.SinglForContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#multFor.
+    def enterMultFor(self, ctx:GopherParser.MultForContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#multFor.
+    def exitMultFor(self, ctx:GopherParser.MultForContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#switch_stmt.
+    def enterSwitch_stmt(self, ctx:GopherParser.Switch_stmtContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#switch_stmt.
+    def exitSwitch_stmt(self, ctx:GopherParser.Switch_stmtContext):
         pass
 
 
@@ -410,6 +761,15 @@ class GopherListener(ParseTreeListener):
 
     # Exit a parse tree produced by GopherParser#list_var.
     def exitList_var(self, ctx:GopherParser.List_varContext):
+        pass
+
+
+    # Enter a parse tree produced by GopherParser#linspace.
+    def enterLinspace(self, ctx:GopherParser.LinspaceContext):
+        pass
+
+    # Exit a parse tree produced by GopherParser#linspace.
+    def exitLinspace(self, ctx:GopherParser.LinspaceContext):
         pass
 
 

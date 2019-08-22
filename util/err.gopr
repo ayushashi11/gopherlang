@@ -1,0 +1,15 @@
+type Result{
+    @any okval
+    @str errval
+}
+impl Result{
+    fn unpack(){
+        [this::okval, this::errval]
+    }
+}
+fn Ok(val){
+    Result{val, ""}
+}
+fn Err(erc){
+    Result{null, erc}
+}

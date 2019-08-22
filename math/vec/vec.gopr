@@ -1,0 +1,53 @@
+type Vec{
+    @float i,j,k
+}
+impl Vec{
+    fn new(i,j,k){
+        @Vec vctr;
+        vctr=Vec{i,j,k};
+        ret vec;
+    }
+    fn add(vec){
+        ret Vec{(this::i+vec::i),(this::j+vec::j),(this::k+vec::k)};
+    }
+    fn neg(){
+        ret Vec{
+            -this::i,
+            -this::j,
+            -this::k
+        };
+    }
+    fn dot(vec){
+        ret ((this::i*vec::i)+(this::j*vec::j)+(this::k*vec::k));
+    }
+    fn cross(vec){
+        ni:float=this::j*vec::k-this::k*vec::j;
+        nj:float=-(this::i*vec::k-this::k*vec::i);
+        nk:float=this::i*vec::j-this::j*vec::i;
+        ret Vec{ni,nj,nk};
+    }
+    fn mag(){
+        ret (this::i**2+this::j**2+this::k**2)**0.5;
+    }
+    fn prnt(){
+        println [this::i,this::j,this::k];
+        ret null;
+    }
+    fn __print(){
+        println [this::i,this::j,this::k];
+    }
+    fn __str(){
+        si,sj,sk:str=[this::i,this::j,this::k];
+        "("+si+")i+("+sj+")j+("+sk+")k"
+    }
+}
+if __name == "__main"{
+    vec1 = Vec::new(3,4,5);
+    vec2 = Vec::new(4,5,3);
+    (vec1::add(vec2))::prnt();
+    println vec2::add(vec1);
+    println vec1::dot(vec2);
+    println vec1::mag();
+    println vec1::cross(vec2);
+    key;
+}

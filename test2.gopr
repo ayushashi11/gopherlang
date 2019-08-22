@@ -1,0 +1,40 @@
+incl math::vec::vec;
+fn bool isprime(n){
+    nf:float=0
+    for i of l[n,1:n]{
+        if (n%i==0){
+            nf+=1
+        }
+    }
+    if nf==2{
+        ret true;
+    }
+    ""
+}
+num:float=input "Enter any number: "
+println "You entered "+`num`;
+if $isp num {
+    println "It is prime";
+}
+else{
+    println "It is not prime";
+}
+@vec::Vec vc1,vc2
+@float dp
+vc1,vc2=[vec::Vec{1,2,3},vec::Vec{2,3,4}];
+dp=vc1 $dot vc2;
+println dp;
+lis:list=[[9,0],[0,0],[0,9]]
+total:float=0;
+for c1,c2 of lis{
+    total+=(c1==c2)?1:0;
+    println `c1`+`c2`;
+}
+key;
+op $isp fx float {
+    .value.isprime
+}
+op $dot xfx vec::Vec,vec::Vec{
+    left::i*right::i+left::j*right::j+left::k*right::k
+}
+0

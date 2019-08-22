@@ -1,6 +1,6 @@
-var list->[1.0,2.0];
-lis = [3.0] + list;
-function f(,a=0){
+li is [1.0,2.0];
+lis is [3.0] + li;
+fn f(,a=0){
     if a>=0{
         ret a;
     }
